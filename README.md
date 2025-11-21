@@ -1,19 +1,10 @@
-Given the following environment made of a grid (5x5) parking lot, a passenger and a self-driving taxi. The goal is that
-the agent (the taxi) picks up the passenger and drop them into the desired location.
-There exists four possible locations for the initial passenger location and the destination. These four locations are colored
-in Red, Blue, Yellow and Green in the figure above.
-The possible actions that the agent can do are:
-The rewarding system is defined as follows:
-At each episode, the agent starts at a random location, the passenger at one of the four possible locations (random) and
-the destination is also at one of the four possible locations (random).
+﻿Given the following environment made of a grid (55) parking lot: a passenger and a self-driving taxi. The goal is that
+the agent (the taxi) picks up the passenger and drops them at the desired location.
 
-Given the following environment made of a grid (5x5) parking lot, a passenger and a self-driving taxi. The goal is that
-the agent (the taxi) picks up the passenger and drop them into the desired location.
+There are four possible locations for the initial passenger and the destination. These locations are colored Red, Blue,
+Yellow and Green in the figure below.
 
-There exists four possible locations for the initial passenger location and the destination. These four locations are colored
-in Red, Blue, Yellow and Green in the figure above.
-
-The possible actions that the agent can do are:
+The possible actions are:
 
 - Go West
 - Go East
@@ -22,14 +13,12 @@ The possible actions that the agent can do are:
 - Pickup
 - Drop-off
 
-The rewarding system is defined as follows:
+Rewards:
 
-- If the agent correctly drops the passenger into the corresponding destination, they get a reward of +20
-- If the agent drops off or picks up at the wrong location they get a reward of −10
-- For each time-step, the agent gets a reward of −1
+- Correct dropoff: +20
+- Wrong pickup/dropoff: -10
+- Each time-step: -1
 
-At each episode, the agent starts at a random location, the passenger at one of the four possible locations (random) and
-the destination is also at one of the four possible locations (random).
+At each episode the agent and passenger/destination start at random valid locations.
 
-![taxi snapshot](./Capture d'écran 2025-11-21 064318.png)
-
+![taxi snapshot](./screenshot.png)
